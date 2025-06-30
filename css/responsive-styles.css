@@ -57,6 +57,11 @@
 /* 📱 Mobiles */
 @media (max-width: 768px) {
 
+    .orbit {
+        max-width: 375px !important;
+        max-height: 340px !important;
+    }
+
     .main-wrapper {
         flex-direction: column;
         align-items: center;
@@ -212,6 +217,11 @@
 /* 📺 Ultra Small Devices */
 @media (min-width: 376px) and (max-width: 480px) {
 
+    .orbit {
+        max-width: 370px !important;
+        max-height: 340px !important;
+    }
+
     .planet-cards-right {
         order: 3;
         max-height: 200px;
@@ -331,13 +341,18 @@
     }
 }
 
-/* 📱 Samsung Galaxy A35 5G - Targeted Media Query */
-@media (width: 412px) {
+/* 📱 Samsung Galaxy Mobile - Targeted Media Query */
+@media (max-height: 700px) {
 
     .planet-cards-left,
     .planet-cards-right {
         width: 95% !important;
-        max-height: 120px !important;
+        max-height: 140px !important;
+    }
+
+    .orbit {
+        max-width: 375px;
+        max-height: 340px;
     }
 
     /* 🪐 Individual cards */
@@ -347,10 +362,10 @@
 
     .planet-cards-left {
         margin-top: -20px !important;
-        margin-bottom: 60px !important;
+        margin-bottom: 10px !important;
     }
 
     .planet-cards-right {
-        margin-top: 25px !important;
+        margin-top: -20px !important;
     }
 }
