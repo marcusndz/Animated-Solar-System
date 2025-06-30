@@ -1,0 +1,56 @@
+/*
+    🌤️ Solar System Light Mode Theme – Stylesheet 🌤️
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 30, 2025 📅
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This file defines styles for the light mode version of the solar system project. It overrides 
+    the default dark theme to offer a clean, bright appearance suitable for day viewing.
+
+    Features:
+    - 🖼️ Light background for body and cards
+    - 🌑 Adjusted orbit borders and planet label colors
+    - ✨ Smooth compatibility with existing layout and theme toggle
+
+    Usage:
+    - Works with the `toggleMode()` function in `index.js`
+    - Should be linked after `index.css` to properly override base styles
+
+    Related Files:
+    - index.css 🎨
+    - index.js 🧠
+    - responsive-styles.css 📱
+
+    Customize freely and shine bright! ☀️🚀
+*/
+
+/* ☀️ Light mode background and text */
+body.light-mode {
+    background-color: whitesmoke;
+    /* 🌼 Bright, clean background */
+    color: black;
+    /* 🖤 Text in readable black */
+}
+
+/* 🧾 Light mode card background and text */
+body.light-mode .card {
+    background-color: rgb(240, 221, 221) !important;
+    /* 🧁 Soft pinkish background */
+    color: black !important;
+    /* 🖋️ Ensures card text is visible */
+}
+
+/* 🌀 Light mode orbit lines */
+body.light-mode .orbit {
+    border-color: #333;
+    /* 🎯 Contrasting orbit color on light background */
+}
+
+/* 🏷️ Light mode planet labels */
+body.light-mode .planet-name-label {
+    color: #333;
+    /* 📌 Darker shade for visibility over light background */
+    text-shadow: 0 0 2px #ece9e5, 0 0 5px #e6dfdf;
+}

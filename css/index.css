@@ -1,0 +1,274 @@
+/*
+    🌌 Solar System Interactive Visualization – Main Stylesheet 🌌
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 30, 2025 📅
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This CSS file styles the animated solar system simulation. It includes:
+    - 🌞 Glowing central Sun
+    - 🪐 Orbiting planets with custom gradients
+    - 🧾 Info cards for planetary details
+    - 🌓 Support for light/dark themes
+    - 📋 Scrollable side panels for planet data
+    - 📱 Responsive-ready layout zones
+
+    Key Features:
+    - Flexbox-based centered layout
+    - CSS gradients & shadows for realism
+    - Hover transitions for interactive cards
+    - Font customization for elegant appearance (Marcellus)
+
+    File Structure:
+    - Base layout & resets
+    - Solar system container & orbits
+    - Planet styles by type
+    - Card design & hover effects
+    - Toggle button styling
+    - Scrollbar hiding techniques
+
+    Dependencies:
+    - Used alongside `index.html`, `index.js`, `light-mode.css`, and `responsive-styles.css`
+
+    Customize:
+    🌈 Update colors, animations, and transitions to match your own solar theme!
+
+    Happy styling, stargazer! 🌠🚀
+*/
+
+/* 🌌 Base Styling */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Marcellus', serif;
+    /* 🖋️ Elegant font for space theme */
+}
+
+/* 🪐 Central Solar System Display */
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* 🌞 Sun Styling */
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, yellow, orange, red);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px yellow;
+    /* ☀️ Glowing effect */
+}
+
+/* 🌀 Orbit Lines */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.8px dashed white;
+    border-radius: 50%;
+    box-shadow: 0 0 2px whitesmoke;
+}
+
+/* 🌍 Planet Base Styling */
+.planet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+/* 🌑 Individual Planet Colors */
+.mercury {
+    background: radial-gradient(circle, #bbb, #666);
+}
+
+.venus {
+    background: radial-gradient(circle, #eec, #b84);
+}
+
+.earth {
+    background: radial-gradient(circle, #3af, #27a);
+}
+
+.mars {
+    background: radial-gradient(circle, #f00, #900);
+}
+
+.jupiter {
+    background: radial-gradient(circle, #fc9, #c96);
+}
+
+.saturn {
+    background: radial-gradient(circle, #ff9, #cc6);
+}
+
+.uranus {
+    background: radial-gradient(circle, #9ff, #6cc);
+}
+
+.neptune {
+    background: radial-gradient(circle, #99f, #66c);
+}
+
+/* 🧭 Orbit Sizes */
+.mercury-orbit {
+    width: 150px;
+    height: 100px;
+}
+
+.venus-orbit {
+    width: 200px;
+    height: 150px;
+}
+
+.earth-orbit {
+    width: 250px;
+    height: 200px;
+}
+
+.mars-orbit {
+    width: 300px;
+    height: 250px;
+}
+
+.jupiter-orbit {
+    width: 350px;
+    height: 300px;
+}
+
+.saturn-orbit {
+    width: 400px;
+    height: 350px;
+}
+
+.uranus-orbit {
+    width: 450px;
+    height: 400px;
+}
+
+.neptune-orbit {
+    width: 500px;
+    height: 450px;
+}
+
+/* 💍 Saturn's Ring */
+.saturn .ring {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* 🪪 Planet Labels (if used) */
+.planet-name-label {
+    position: absolute;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 0 0 2px #333, 0 0 5px #333;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 14px;
+}
+
+/* 📦 Main Layout Wrapper */
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* 📋 Planet Cards Container */
+.planet-cards-left,
+.planet-cards-right {
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: 1rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* 👈 Left Card Column - Hide Scrollbar */
+.planet-cards-left {
+    margin-left: -13px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE & Edge */
+}
+
+.planet-cards-left::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+/* 👉 Right Card Column */
+.planet-cards-right {
+    margin-left: -100px;
+}
+
+/* 🏷️ Card Titles */
+.card-title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* 🧾 Planet Info Cards */
+.card {
+    background-color: #222;
+    color: whitesmoke;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(0.95);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌗 Mode Toggle Button */
+.mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 300px;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,332 @@
+/*
+    📱 Responsive Styles for Solar System Project 🌌
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 30, 2025
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This CSS file overrides and enhances layout for smaller screens.
+    Applies adjustments for tablets, mobiles, and compact viewports.
+
+    Features:
+    - Stacks columns vertically on small screens 
+    - Reduces orbit and solar system size for compact fit
+    - Adjusts font sizes and button placement
+    - Ensures scrollability and visibility of content
+
+    Targeted breakpoints:
+    - Tablets: max-width 1024px
+    - Mobiles: max-width 768px, 480px
+*/
+
+/* 📏 Tablets and below */
+@media (max-width: 1024px) {
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 1rem;
+    }
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95%;
+        max-height: 350px;
+        margin: 0 auto 1rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .planet-cards-right::-webkit-scrollbar,
+    .planet-cards-left::-webkit-scrollbar {
+        display: none;
+    }
+
+    .solar-system {
+        width: 500px;
+        height: 500px;
+    }
+
+    .mode-toggle {
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+/* 📱 Mobiles */
+@media (max-width: 768px) {
+
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .planet-cards-left {
+        order: 1;
+        max-height: 280px;
+        overflow-y: scroll;
+        margin-left: 0;
+        margin-bottom: 4rem;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        gap: 1px;
+    }
+
+    .planet-cards-left::-webkit-scrollbar {
+        display: none;
+    }
+
+    .solar-system {
+        order: 2;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 1rem;
+    }
+
+    .planet-cards-right {
+        order: 3;
+        max-height: 400px;
+        overflow-y: scroll;
+        margin-right: 0;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-top: 2rem;
+        gap: 1px;
+    }
+
+    .planet-cards-right::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sun {
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 15px yellow;
+    }
+
+    .planet {
+        width: 12px;
+        height: 12px;
+    }
+
+    .orbit {
+        border-width: 0.5px;
+    }
+
+    .planet-name-label {
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .mode-toggle {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* 📺 Ultra Small Devices */
+@media (max-width: 376px) {
+
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .planet-cards-left {
+        order: 1;
+        max-height: 100px;
+        overflow-y: scroll;
+        margin-left: 0;
+        margin-bottom: 4rem;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        gap: 0 !important;
+        margin-top: -20px;
+    }
+
+    .planet-cards-left::-webkit-scrollbar {
+        display: none;
+    }
+
+    .solar-system {
+        order: 2;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 1rem;
+    }
+
+    .planet-cards-right {
+        order: 3;
+        max-height: 100px;
+        overflow-y: scroll;
+        margin-right: 0;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-top: 1.7rem;
+    }
+
+    .planet-cards-right::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sun {
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 15px yellow;
+    }
+
+    .planet {
+        width: 12px;
+        height: 12px;
+    }
+
+    .orbit {
+        border-width: 0.5px;
+    }
+
+    .planet-name-label {
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .mode-toggle {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* 📺 Ultra Small Devices */
+@media (min-width: 376px) and (max-width: 480px) {
+
+    .planet-cards-right {
+        order: 3;
+        max-height: 200px;
+        overflow-y: scroll;
+        margin-right: 0;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-top: 1.7rem;
+    }
+
+    .planet-cards-right::-webkit-scrollbar {
+        display: none;
+    }
+
+    .planet-cards-left {
+        order: 1;
+        max-height: 200px;
+        overflow-y: scroll;
+        margin-left: 0;
+        margin-bottom: 5rem;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-top: -20px;
+    }
+}
+
+/* 📱 Surface Duo – Folded Mode (540×720) */
+@media (width: 540px) and (height: 720px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 90% !important;
+        max-height: 100px !important;
+    }
+}
+
+/* 📱 Surface Duo – Unfolded Mode (720×720) */
+@media (width: 720px) and (height: 720px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+    }
+}
+
+/* 🖥️ Nest Hub (1st Gen Only – 1024x600) */
+@media (width: 1024px) and (height: 600px) {
+
+    /* 📦 Containers for left and right card sections */
+    .planet-cards-left,
+    .planet-cards-right {
+        display: flex !important;
+        /* Flex layout */
+        flex-wrap: wrap !important;
+        /* Wrap to next line */
+        justify-content: space-between !important;
+        /* Spread cards evenly */
+        width: 100% !important;
+        padding: 0 10px !important;
+        margin-bottom: -260px !important;
+        gap: 0 !important;
+        /* No extra space between cards */
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .planet-cards-right {
+        margin-top: -19px !important;
+        order: 3
+    }
+
+    .solar-system {
+        order: 2;
+    }
+
+    /* 🪐 Individual cards */
+    .planet-cards-left>div,
+    .planet-cards-right>div {
+        width: 25% !important;
+        /* 4 cards in 1 row, each takes 25% */
+        height: 50px !important;
+        font-size: 10px !important;
+        border-radius: 2px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        word-break: break-word !important;
+        padding: 2px !important;
+        box-sizing: border-box !important;
+        /* Include padding in width */
+    }
+}
+
+/* 💻 Surface Pro – Landscape (1368×912) */
+@media (width: 1368px) and (height: 912px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95% !important;
+        max-height: 400px !important;
+    }
+}
+
+/* 💻 Surface Pro – Portrait (912×1368) */
+@media (width: 912px) and (height: 1368px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95% !important;
+        max-height: 400px !important;
+    }
+}

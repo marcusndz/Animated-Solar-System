@@ -1,0 +1,192 @@
+<!--
+    🌌 Solar System Interactive Visualization 🌌
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 30, 2025 📅
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This HTML file visualizes the solar system using CSS animations and JS logic. It includes:
+    - 🌞 The Sun with glowing effect
+    - 🪐 Orbiting planets with gradients and shadows
+    - 🧠 Interactive planet info cards
+    - 🎨 Light/Dark mode toggle
+    - 💡 Font Awesome icons for each planet
+    - 🎯 Responsive layout with flexible containers
+
+    Dependencies:
+    - Bootstrap 4.5.2 for layout 📦
+    - Font Awesome 5.15.4 for icons ⭐
+    - Google Fonts (Marcellus) for typography 🖋️
+    - index.css for layout & animations 🎨
+    - light-mode.css for theme switching 🌗
+    - index.js for interactivity 🧩
+    - responsive-styles.css (optional, for further responsiveness) 📱
+
+    Usage:
+    - Add or modify planet data via `data-info` attributes
+    - Style planets & orbits in `index.css`
+    - Customize card styling and behavior in JS
+
+    Enjoy your animated, educational space journey! 🚀
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ✅ Character encoding -->
+    <meta charset="UTF-8"> <!-- 🧠 Ensures consistent character display -->
+
+    <!-- ✅ Viewport for responsive scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 📱 Mobile-friendly scaling -->
+
+    <!-- ✅ Page title -->
+    <title>Solar System</title>
+
+    <!-- ✅ SEO meta tags -->
+    <meta name="description"
+        content="Explore our solar system through an interactive, animated visualization. Includes planet details, orbiting simulation, and theme toggle. 🚀🪐">
+    <!-- 🔍 Description for search engines -->
+    <meta name="keywords"
+        content="Solar System, Planet Animation, Interactive Space Model, HTML CSS JS, Space Visualization, Madhurima Rawat">
+    <!-- 🗝️ Search keywords -->
+    <meta name="author" content="Madhurima Rawat"> <!-- ✍️ Author info -->
+
+    <!-- ✅ Social sharing preview (Open Graph Protocol for Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Solar System – Interactive Visualization 🌞🪐"> <!-- 📘 OG title -->
+    <meta property="og:description"
+        content="A fun and educational solar system simulation with orbit animations, planet info cards, and light/dark theme. Built by Madhurima Rawat.">
+    <!-- 📝 OG description -->
+    <meta property="og:image" content="snapshots/preview.png"> <!-- 🖼️ Preview image -->
+    <meta property="og:type" content="website"> <!-- 🌍 Content type -->
+    <meta property="og:url" content="https://madhurimarawat.github.io/Animated-Solar-System/">
+    <!-- 🔗 Page URL -->
+
+    <!-- ✅ Twitter Card preview -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- 🐦 Type of card -->
+    <meta name="twitter:title" content="Solar System – Interactive Web Experience">
+    <meta name="twitter:description"
+        content="Simulate planetary motion, explore planet facts, and enjoy the theme toggle in this interactive space model. 🌌🪐">
+    <meta name="twitter:image" content="snapshots/preview.png">
+
+    <!-- ✅ Favicon / Logo -->
+    <link rel="icon" href="https://o.quizlet.com/14M5G9A3lUhYyqaoJsLJwA_b.png" type="image/png">
+    <!-- 🖼️ Custom tab icon -->
+
+    <!-- 🌐 Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- 🎨 Custom CSS Files -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Main layout and animation styles -->
+    <link rel="stylesheet" href="css/light-mode.css"> <!-- Light mode toggle styling -->
+    <link rel="stylesheet" href="css/responsive-styles.css"> <!-- Optional: responsive adjustments -->
+
+    <!-- ⭐ Font Awesome for Planet Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- 🖋️ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <!-- 🗓️ Site Creation Date -->
+    <meta name="sdate" content="2025-06-30T00:00:00+05:30">
+
+    <!-- 🕓 Last Modified Date -->
+    <meta name="lastmod" content="2025-06-30T15:45:00+05:30">
+
+</head>
+
+<body>
+    <!-- 📜 Conditional Script Loader -->
+    <script>
+        const script = document.createElement('script');
+        script.src = window.innerWidth <= 1024 ? 'js/mobile-index.js' : 'js/index.js';
+
+        script.onload = () => {
+            if (typeof applySavedMode === 'function') {
+                applySavedMode(); // 👈 this should trigger mode setup
+            }
+        };
+
+        document.body.appendChild(script);
+    </script>
+
+
+    <!-- 🔘 Dark/Light Mode Toggle Button -->
+    <button class="mode-toggle" onclick="toggleMode()">☀️ Light Mode</button>
+
+    <!-- 🌌 Main Wrapper for Layout -->
+    <div class="main-wrapper">
+
+        <!-- 🪐 Left Side Cards Container -->
+        <div class="planet-cards-left"></div>
+
+        <!-- 🌞 Central Solar System Display -->
+        <div class="solar-system">
+            <!-- 🔆 The Sun -->
+            <div class="sun"></div>
+
+            <!-- Planet Orbits and Planets 🌍 -->
+            <div class="orbit mercury-orbit">
+                <div id="planet-mercury" class="planet mercury"
+                    data-info="Mercury: Grayish, Smallest planet, Closest to Sun"></div>
+            </div>
+
+            <div class="orbit venus-orbit">
+                <div id="planet-venus" class="planet venus" data-info="Venus: Yellowish, Second planet, Hottest planet">
+                </div>
+            </div>
+
+            <div class="orbit earth-orbit">
+                <div id="planet-earth" class="planet earth"
+                    data-info="Earth: Blue and Green, Home to life, Third planet"></div>
+
+                <!-- 🌕 Moon orbiting Earth -->
+                <div id="planet-moon" class="moon" data-info="Moon: Earth's satellite, Grayish, Affects tides"></div>
+            </div>
+
+            <div class="orbit mars-orbit">
+                <div id="planet-mars" class="planet mars" data-info="Mars: Red, Fourth planet, Known as the Red Planet">
+                </div>
+            </div>
+
+            <div class="orbit jupiter-orbit">
+                <div id="planet-jupiter" class="planet jupiter"
+                    data-info="Jupiter: Brown and Beige, Largest planet, Fifth planet"></div>
+            </div>
+
+            <div class="orbit saturn-orbit">
+                <div id="planet-saturn" class="planet saturn"
+                    data-info="Saturn: Yellowish, Sixth planet, Known for its rings">
+                    <div class="ring"></div> <!-- 💍 Saturn's Ring -->
+                </div>
+            </div>
+
+            <div class="orbit uranus-orbit">
+                <div id="planet-uranus" class="planet uranus"
+                    data-info="Uranus: Light blue, Seventh planet, Coldest planet"></div>
+            </div>
+
+            <div class="orbit neptune-orbit">
+                <div id="planet-neptune" class="planet neptune"
+                    data-info="Neptune: Dark blue, Eighth planet, Farthest from Sun"></div>
+            </div>
+        </div>
+
+        <!-- ℹ️ Floating Info Card on Hover/Click -->
+        <div id="planet-info" class="card text-white bg-dark mb-3"
+            style="display: none; position: absolute; width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="planet-name"></h5>
+                <p class="card-text" id="planet-details"></p>
+            </div>
+        </div>
+
+        <!-- 🪐 Right Side Cards Container -->
+        <div class="planet-cards-right"></div>
+    </div>
+
+</body>
+
+</html>
