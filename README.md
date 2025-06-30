@@ -29,10 +29,10 @@ This project is an **interactive solar system visualization** using pure **HTML,
 
 <p align="center">
 <a href="https://madhurimarawat.github.io/Animated-Solar-System">
-<img src="snapshots/preview-themes.gif" height="100%">
+<img src="snapshots/preview-themes.gif" height="100%"></a>
+<a href="https://madhurimarawat.github.io/Animated-Solar-System">
 <img src ="snapshots/preview-responsive.gif" height="500px">
 </a>
-
 </p>
 
 ---
