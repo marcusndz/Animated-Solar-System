@@ -25,12 +25,12 @@ This project is an **interactive solar system visualization** using pure **HTML,
   <a href="https://github.com/madhurimarawat/Animated-Solar-System/commits/main">
     <img src="https://img.shields.io/github/last-commit/madhurimarawat/Animated-Solar-System?style=for-the-badge&color=f28500" alt="Last commit">
   </a>
+</p>
 
+<p align="center">
 <a href="https://madhurimarawat.github.io/Animated-Solar-System">
-
 <img src="snapshots/preview-themes.gif" height="100%">
 <img src ="snapshots/preview-responsive.gif" height="500px">
-
 </a>
 
 </p>
