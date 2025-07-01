@@ -65,8 +65,7 @@ This project is an **interactive solar system visualization** using pure **HTML,
 ├── 📁 js/
 │   └── 🧩 index.js              # JavaScript for interactivity & toggles
 │   └── 🧩 mobile-index.js       # JavaScript for interactivity & toggles (Mobile)
-├── 📁 snapshots/                # GIF previews
-├── 📁 website_snapshots/        # Static theme snapshots (added)
+├── 📁 snapshots/                # GIF previews and Static theme snapshots
 │   ├── 🖼️ preview.png
 │   └── 💡 preview-light.png
 ├── 📄 README.md                 # You're here! 📘
