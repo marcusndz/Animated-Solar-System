@@ -58,7 +58,10 @@ This project is an **interactive solar system visualization** using pure **HTML,
 ├── 📁 css/
 │   ├── 🎨 index.css             # Core styling for layout & animations
 │   ├── 🌗 light-mode.css        # Styles for light theme
-│   └── 📱 responsive-styles.css # Additional responsive adjustments
+│   ├── 🌑 dark-mode.css         # Styles for dark theme
+│   ├── 🪐 planets.css           # Orbit & planet-specific styles
+│   ├── 📱 responsive-styles.css # Additional responsive adjustments
+│   └── 🎯 targeted-devices.css  # Media queries for specific screen sizes
 ├── 📁 js/
 │   └── 🧩 index.js              # JavaScript for interactivity & toggles
 │   └── 🧩 mobile-index.js       # JavaScript for interactivity & toggles (Mobile)

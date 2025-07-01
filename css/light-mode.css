@@ -2,7 +2,7 @@
     🌤️ Solar System Light Mode Theme – Stylesheet 🌤️
 
     Author: Madhurima Rawat 👩‍💻
-    Date: June 30, 2025 📅
+    Date: July 1, 2025 📅
     Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
 
     Description:
@@ -36,9 +36,9 @@ body.light-mode {
 
 /* 🧾 Light mode card background and text */
 body.light-mode .card {
-    background-color: rgb(240, 221, 221) !important;
+    background-color: rgb(240, 221, 221);
     /* 🧁 Soft pinkish background */
-    color: black !important;
+    color: black;
     /* 🖋️ Ensures card text is visible */
 }
 
@@ -46,6 +46,7 @@ body.light-mode .card {
 body.light-mode .orbit {
     border-color: #333;
     /* 🎯 Contrasting orbit color on light background */
+    box-shadow: 0 0 2px rgb(115, 220, 164);
 }
 
 /* 🏷️ Light mode planet labels */
@@ -53,4 +54,29 @@ body.light-mode .planet-name-label {
     color: #333;
     /* 📌 Darker shade for visibility over light background */
     text-shadow: 0 0 2px #ece9e5, 0 0 5px #e6dfdf;
+}
+
+/* 🌗 Mode Toggle Button */
+body.light-mode .mode-toggle {
+    color: white;
+    box-shadow: 0 0 15px rgb(241, 59, 59);
+}
+
+/* 🌗 Mode Toggle Button */
+body.light-mode .mode-toggle:hover {
+    color: bisque;
+}
+
+body.light-mode .card:hover {
+    box-shadow: 0 4px 8px teal;
+}
+
+/* 🐱‍💻 GitHub Icon Hover Effect */
+body.light-mode .github-button img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎯 On Hover: Enlarge and highlight */
+body.light-mode .github-button:hover img {
+    box-shadow: 0 0 12px #333, 0 0 20px rgba(0, 0, 0, 0.3);
 }

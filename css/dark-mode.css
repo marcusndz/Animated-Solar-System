@@ -1,0 +1,78 @@
+/*
+    🌤️ Solar System dark Mode Theme – Stylesheet 🌤️
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: July 1, 2025 📅
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This file defines styles for the dark mode version of the solar system project. It overrides 
+    the default default theme to offer a clean, bright appearance suitable for day viewing.
+
+    Features:
+    - 🖼️ dark background for body and cards
+    - 🌑 Adjusted orbit borders and planet label colors
+    - ✨ Smooth compatibility with existing layout and theme toggle
+
+    Usage:
+    - Works with the `toggleMode()` function in `index.js`
+    - Should be linked after `index.css` to properly override base styles
+
+    Related Files:
+    - index.css 🎨
+    - index.js 🧠
+    - responsive-styles.css 📱
+
+    Customize freely and shine bright! ☀️🚀
+*/
+
+/* ☀️ dark mode background and text */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* 🧾 dark mode card background and text */
+body.dark-mode .card {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+/* 🌀 dark mode orbit lines */
+body.dark-mode .orbit {
+    border-color: white;
+    /* 🎯 Contrasting orbit color on dark background */
+    box-shadow: 0 0 2px whitesmoke;
+}
+
+/* 🏷️ dark mode planet labels */
+body.dark-mode .planet-name-label {
+    color: whitesmoke;
+    /* 📌 default shade for visibility over dark background */
+    text-shadow: 0 0 2px #333, 0 0 5px #333;
+}
+
+/* 🌗 Mode Toggle Button */
+body.dark-mode .mode-toggle {
+    color: black;
+    box-shadow: 0 0 20px bisque;
+}
+
+/* 🌗 Mode Toggle Button */
+body.dark-mode .mode-toggle:hover {
+    color: teal;
+}
+
+body.dark-mode .card:hover {
+    box-shadow: 0 4px 8px bisque;
+}
+
+/* 🐱‍💻 GitHub Icon Hover Effect */
+body.dark-mode .github-button img {
+    box-shadow: 0 0 8px bisque;
+}
+
+/* 🎯 On Hover: Enlarge and highlight */
+body.dark-mode .github-button:hover img {
+    box-shadow: 0 0 12px #cec5c5, 0 0 20px yellow;
+}

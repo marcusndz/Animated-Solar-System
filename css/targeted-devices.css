@@ -1,0 +1,367 @@
+/*
+    📱 Responsive Styles(Targeted Devices) for Solar System Project 🌌
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: July 1, 2025
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This CSS file overrides and enhances layout for smaller screens.
+    Applies adjustments for tablets, mobiles, and compact viewports.
+
+    Features:
+    - Stacks columns vertically on small screens 
+    - Reduces orbit and solar system size for compact fit
+    - Adjusts font sizes and button placement
+    - Ensures scrollability and visibility of content
+
+    Targeted breakpoints:
+    - Tablets: max-width 1024px
+    - Mobiles: max-width 768px, 480px
+*/
+
+/* 🖥️ Nest Hub (1st Gen Only – 1024x600) */
+@media (width: 1024px) and (height: 600px) {
+
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 1rem;
+    }
+
+    .solar-system {
+        width: 980px;
+        height: 360px;
+        order: 2;
+        margin-top: -160px;
+        margin-left: 0px;
+    }
+
+    .orbit {
+        max-width: 1000px;
+        max-height: 420px;
+    }
+
+    /* 🪐 Orbit Sizes – Scaled proportionally */
+    .mercury-orbit {
+        width: 300px;
+        height: 108px;
+    }
+
+    .venus-orbit {
+        width: 400px;
+        height: 132px;
+    }
+
+    .earth-orbit {
+        width: 500px;
+        height: 156px;
+    }
+
+    .mars-orbit {
+        width: 600px;
+        height: 180px;
+    }
+
+    .jupiter-orbit {
+        width: 700px;
+        height: 228px;
+    }
+
+    .saturn-orbit {
+        width: 800px;
+        height: 264px;
+    }
+
+    .uranus-orbit {
+        width: 900px;
+        height: 312px;
+    }
+
+    .neptune-orbit {
+        width: 980px;
+        height: 370px;
+    }
+
+    /* 📦 Containers for left and right card sections */
+    .planet-cards-left,
+    .planet-cards-right {
+        display: flex;
+        /* Flex layout */
+        flex-wrap: wrap;
+        /* Wrap to next line */
+        justify-content: space-between;
+        /* Spread cards evenly */
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: -320px;
+        gap: 0;
+        /* No extra space between cards */
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .planet-cards-left {
+        margin-top: 0px;
+    }
+
+    .planet-cards-right {
+        margin-top: 45px;
+        margin-left: 0px;
+        order: 3
+    }
+
+    /* 🪐 Individual cards */
+    .planet-cards-left>div,
+    .planet-cards-right>div {
+        width: 25%;
+        /* 4 cards in 1 row, each takes 25% */
+        height: 50px;
+        font-size: 10px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        word-break: break-word;
+        padding: 2px;
+        box-sizing: border-box;
+        /* Include padding in width */
+    }
+
+    .mode-toggle {
+        right: 1rem;
+        position: fixed;
+        top: 80%;
+        transform: translateY(-50%);
+        transition: transform 0.2s ease;
+        /* Transition moved here for consistency */
+    }
+
+    .mode-toggle:hover {
+        transform: translateY(-50%) scale(1.05);
+        /* Combine both */
+        transform-origin: bottom center;
+    }
+
+    /* 🐙 GitHub Button Styling */
+    .github-button {
+        position: fixed;
+        top: 22%;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+}
+
+/* 💻 Surface Pro – Landscape (1368×912) */
+@media (width: 1368px) and (height: 912px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95%;
+        max-height: 400px;
+    }
+}
+
+/* 💻 Surface Pro – Portrait (912×1368) */
+@media (width: 912px) and (height: 1368px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95%;
+        max-height: 400px;
+    }
+}
+
+/* 📱 Surface Duo – Folded Mode (540×720) */
+@media (width: 540px) and (height: 720px) {
+
+    .solar-system {
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    /* 🪐 Orbit Sizes – Scaled for Neptune (500×320) */
+    .mercury-orbit {
+        width: 200px;
+        height: 80px;
+    }
+
+    .venus-orbit {
+        width: 250px;
+        height: 100px;
+    }
+
+    .earth-orbit {
+        width: 300px;
+        height: 140px;
+    }
+
+    .mars-orbit {
+        width: 350px;
+        height: 180px;
+    }
+
+    .jupiter-orbit {
+        width: 400px;
+        height: 220px;
+    }
+
+    .saturn-orbit {
+        width: 450px;
+        height: 260px;
+    }
+
+    .uranus-orbit {
+        width: 475px;
+        height: 290px;
+    }
+
+    .neptune-orbit {
+        width: 500px;
+        height: 320px;
+    }
+
+    .planet-cards-left,
+    .planet-cards-right {
+        max-height: 200px;
+    }
+
+    .planet-cards-left {
+        margin-top: -20px;
+        margin-bottom: 25px;
+    }
+
+    .planet-cards-right {
+        margin-top: 5px;
+    }
+
+    /* 🔘 Buttons remain untouched */
+    .mode-toggle {
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .github-button {
+        right: 7rem;
+        top: -5px;
+        margin-top: 0;
+    }
+
+    /* 🔘 Buttons remain visible but scaled down */
+    .mode-toggle,
+    .github-button {
+        font-size: 0.75rem;
+        /* Smaller text */
+        padding: 0.4rem 0.6rem;
+        /* Reduced padding */
+        transform: scale(0.9);
+        /* Slight scale down */
+        border-radius: 6px;
+        /* Optional: smaller rounded edges */
+    }
+
+    .github-button {
+        transform: scale(0.7);
+        /* Slight scale down */
+    }
+}
+
+/* 📱 Surface Duo – Unfolded Mode (720×720) */
+@media (width: 720px) and (height: 720px) {
+
+    .planet-cards-left,
+    .planet-cards-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/* 📏 Tablets and below */
+@media (width: 768px) and (height:1024px) {
+
+    /* 🪐 Orbit Sizes – Even spacing based on Neptune (740×490) */
+    .mercury-orbit {
+        width: 295px;
+        height: 155px;
+    }
+
+    .venus-orbit {
+        width: 359px;
+        height: 203px;
+    }
+
+    .earth-orbit {
+        width: 423px;
+        height: 251px;
+    }
+
+    .mars-orbit {
+        width: 487px;
+        height: 299px;
+    }
+
+    .jupiter-orbit {
+        width: 551px;
+        height: 347px;
+    }
+
+    .saturn-orbit {
+        width: 615px;
+        height: 395px;
+    }
+
+    .uranus-orbit {
+        width: 679px;
+        height: 443px;
+    }
+
+    .neptune-orbit {
+        width: 740px;
+        height: 490px;
+    }
+
+    .planet-cards-left,
+    .planet-cards-right {
+        width: 95%;
+        max-height: 320px;
+        margin: 0 auto 1rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .planet-cards-right::-webkit-scrollbar,
+    .planet-cards-left::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Adjusting left and right cards size and margin according to device height(for mobile phones) */
+
+/* 📱 Mobiles – Iphone 12 pro and 14 pro max */
+@media ((width: 390px) and (height:844px)) or ((width: 430px) and (height:932px)) or ((width: 360px) and (height:740px)) {
+
+    .solar-system {
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    .planet-cards-left,
+    .planet-cards-right {
+        max-height: 300px;
+    }
+
+    .planet-cards-left {
+        margin-top: -17px;
+        margin-bottom: 30px;
+    }
+
+    .planet-cards-right {
+        margin-top: 5px;
+    }
+}

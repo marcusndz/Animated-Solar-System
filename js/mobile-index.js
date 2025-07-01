@@ -2,7 +2,7 @@
  📱 Mobile-Friendly Solar System Logic – JavaScript
 
  Author: Madhurima Rawat 👩‍💻
- Date: June 30, 2025 📅
+ Date: July 1, 2025 📅
  Description:
  Optimized script for mobile performance and interaction. Minimizes resource use while keeping
  orbit animation, tooltips, and card generation intact.
@@ -25,12 +25,10 @@ function toggleMode() {
     if (isDark) {
         button.innerHTML = "☀️ Light Mode";
         button.style.backgroundColor = "whitesmoke";
-        button.style.color = "black";
         localStorage.setItem("mode", "dark"); // 💾 Save preference
     } else {
         button.innerHTML = "🌙 Dark Mode";
         button.style.backgroundColor = "#333";
-        button.style.color = "white";
         localStorage.setItem("mode", "light"); // 💾 Save preference
     }
 }
@@ -49,14 +47,14 @@ function applySavedMode() {
         if (button) {
             button.innerHTML = "☀️ Light Mode";
             button.style.backgroundColor = "whitesmoke";
-            button.style.color = "black";
+
         }
     } else {
         body.classList.add("light-mode");
         if (button) {
             button.innerHTML = "🌙 Dark Mode";
             button.style.backgroundColor = "#333";
-            button.style.color = "white";
+
         }
     }
 }
@@ -184,7 +182,7 @@ planetElements_mobile.forEach((planet, i) => {
     if (info && info.includes(': ')) {
         const [name, details] = info.split(': ');
         const card = document.createElement('div');
-        card.className = 'card text-white bg-dark mb-2';
+        card.className = 'card mb-2';
         card.innerHTML = `
             <div class="card-body">
                 <h5 class="card-title">${getPlanetIcon(name)} ${name}</h5>

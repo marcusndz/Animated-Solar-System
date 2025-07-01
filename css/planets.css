@@ -1,0 +1,147 @@
+/*
+    🌌 Solar System Planets & Orbit Styles – Visual Styling Sheet 🌌
+
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 30, 2025 📅
+    Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
+
+    Description:
+    This CSS file contains the visual styling for the Sun, orbit paths, and planets
+    in the animated Solar System simulation. It includes:
+    - 🌞 Radiant, glowing Sun at the center
+    - 🌍 Distinctive planetary gradients for realism
+    - 🪐 Differentiated orbit sizes by planet
+    - 💍 Custom ring for Saturn
+    - ✨ Glowing and shadow effects for visual depth
+
+    Key Features:
+    - Absolute positioning for centered orbital motion
+    - Radial gradients to simulate planetary surfaces
+    - Layered orbits to reflect astronomical spacing
+    - Modular styling for easy extension
+
+    File Sections:
+    - Sun styling
+    - Base planet appearance
+    - Individual planet themes
+    - Orbit dimension classes
+    - Saturn's ring styling
+
+    Integrations:
+    - Used with `index.html` and `index.js`
+    - Complements animation and theme styles from main stylesheet
+
+    Customize:
+    🎨 Add more planets, moons, or visual effects to enhance the experience!
+
+    Reach for the stars, coder! 🌠🔭
+*/
+
+/* 🌞 Sun Styling */
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, yellow, orange, red);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px yellow;
+    /* ☀️ Glowing effect */
+}
+
+/* 🌍 Planet Base Styling */
+.planet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+/* 🌑 Individual Planet Colors */
+.mercury {
+    background: radial-gradient(circle, #bbb, #666);
+}
+
+.venus {
+    background: radial-gradient(circle, #eec, #b84);
+}
+
+.earth {
+    background: radial-gradient(circle, #3af, #27a);
+}
+
+.mars {
+    background: radial-gradient(circle, #f00, #900);
+}
+
+.jupiter {
+    background: radial-gradient(circle, #fc9, #c96);
+}
+
+.saturn {
+    background: radial-gradient(circle, #ff9, #cc6);
+}
+
+.uranus {
+    background: radial-gradient(circle, #9ff, #6cc);
+}
+
+.neptune {
+    background: radial-gradient(circle, #99f, #66c);
+}
+
+.mercury-orbit {
+    width: 230px;
+    height: 150px;
+}
+
+.venus-orbit {
+    width: 290px;
+    height: 210px;
+}
+
+.earth-orbit {
+    width: 350px;
+    height: 270px;
+}
+
+.mars-orbit {
+    width: 410px;
+    height: 330px;
+}
+
+.jupiter-orbit {
+    width: 470px;
+    height: 390px;
+}
+
+.saturn-orbit {
+    width: 530px;
+    height: 450px;
+}
+
+.uranus-orbit {
+    width: 590px;
+    height: 510px;
+}
+
+.neptune-orbit {
+    width: 650px;
+    height: 560px;
+}
+
+/* 💍 Saturn's Ring */
+.saturn .ring {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}

@@ -2,7 +2,7 @@
  🌌 Solar System Interactive Logic – JavaScript 🌌
 
  Author: Madhurima Rawat 👩‍💻
- Date: June 30, 2025 📅
+ Date: July 1, 2025 📅
  Repository: https://github.com/madhurimarawat/Animated-Solar-System 🔗
 
  Description:
@@ -50,12 +50,10 @@ function toggleMode() {
     if (isDark) {
         button.innerHTML = "☀️ Light Mode";
         button.style.backgroundColor = "whitesmoke";
-        button.style.color = "black";
         localStorage.setItem("mode", "dark"); // 💾 Save preference
     } else {
         button.innerHTML = "🌙 Dark Mode";
         button.style.backgroundColor = "#333";
-        button.style.color = "white";
         localStorage.setItem("mode", "light"); // 💾 Save preference
     }
 }
@@ -74,14 +72,13 @@ function applySavedMode() {
         if (button) {
             button.innerHTML = "☀️ Light Mode";
             button.style.backgroundColor = "whitesmoke";
-            button.style.color = "black";
         }
     } else {
         body.classList.add("light-mode");
         if (button) {
             button.innerHTML = "🌙 Dark Mode";
             button.style.backgroundColor = "#333";
-            button.style.color = "white";
+
         }
     }
 }
@@ -228,7 +225,7 @@ planetElements.forEach((planet, index) => {
     if (info && info.includes(': ')) {
         const [name, details] = info.split(': ');
         const card = document.createElement('div');
-        card.className = 'card text-white bg-dark mb-3';
+        card.className = 'card mb-3';
         card.style.maxWidth = '100%';
 
         // 🔤 Insert icon and name
