@@ -49,6 +49,13 @@ body.light-mode .orbit {
     box-shadow: 0 0 2px rgb(115, 220, 164);
 }
 
+/* 💍 Saturn's Ring */
+body.light-mode .saturn .ring {
+
+    border: 3px solid rgba(73, 62, 62, 0.5);
+    box-shadow: 0 0 15px rgba(45, 196, 120, 0.5);
+}
+
 /* 🏷️ Light mode planet labels */
 body.light-mode .planet-name-label {
     color: #333;
