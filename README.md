@@ -121,9 +121,13 @@ cd Animated-Solar-System
 ## 📌 Todo / Future Enhancements
 
 * Add moons and asteroid belts 🌑
-* Planetary rotation animation 🔁
-* Tooltip-based info instead of cards 🧾
-* Add sound effects 🎧
+* 🔁 Planetary rotation animation - animate each planet to rotate around its own axis, mimicking the natural spin observed in real celestial bodies, in addition to their orbital motion around the Sun.
+* 🎧 Add interactive sound effects  
+* 🪐 Add hover cards for each planet and the Sun  
+  * Fix existing hover card layout (currently flows only for Neptune)
+ 
+> [!TIP]
+> Wanna implement this or add something yourself? Check out [contributing.md](contributing.md).
 
 ---
 
