@@ -117,13 +117,17 @@ cd Animated-Solar-System
 
 ---
 
-## 📌 Todo / Future Enhancements
+## 📌 Future Enhancements
 
 * Add moons and asteroid belts 🌑
 * 🔁 Planetary rotation animation - animate each planet to rotate around its own axis, mimicking the natural spin observed in real celestial bodies, in addition to their orbital motion around the Sun.
 * 🎧 Add interactive sound effects  
 * 🪐 Add hover cards for each planet and the Sun  
   * Fix existing hover card layout (currently flows only for Neptune)
+* 💫 Saturn's ring tilt – Tilt Saturn’s rings by 45° to simulate a more realistic 3D appearance.
+* 🌍 Add 3D depth illusion – Enhance the planetary visuals with shading and gradients to give a more spherical, three-dimensional look.
+* 🧹 Refactor CSS – Use relative sizing (`max-height: 25%` for planet cards) instead of fixed pixel values for better scalability across devices.
+* 🧮 Dynamic orbit generation – Use JavaScript to calculate orbit sizes as a percentage of the viewport or container width, eliminating the need for separate responsive rules for each device and planet.
  
 > [!TIP]
 > Wanna implement this or add something yourself? Check out [contributing.md](contributing.md).
